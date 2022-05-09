@@ -2,7 +2,7 @@
 using BootzorComponents.ZorEnums;
 using Microsoft.AspNetCore.Components.Web;
 
-namespace BootzorComponents.Components.Dialog;
+namespace Bootzor.Components.Dialog;
 
 public partial class ZorDialog : ComponentBase
 {
