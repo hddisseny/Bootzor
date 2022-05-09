@@ -1,0 +1,49 @@
+﻿@* 
+@cursorImageActive
+<br />
+@maxCursorStack*@
+<div class="slider">
+
+    <div class="visor" style="width: @(ImageWidth)px">
+        @if( @ListImages is not null)
+        {
+           @for (var i = 0; i < ListImages.Count; i++)
+           {
+               <img src=@ListImages[i] class="slide slide-@i" style="left: @(cursorImageActive+(ImageWidth*i) )px"/>
+           }
+        } 
+    </div>
+    <button @onclick="Prev">Prev</button>
+    <button @onclick="Next">Next</button>
+</div>
+
+@code {
+    [Parameter]
+    public List<string>? ListImages { get; set; }
+
+    [Parameter]
+    public int ImageWidth { get; set; } = 600; 
+
+    private int cursorImageActive;
+    private int maxCursorStack;
+    private void Next()
+    {
+        if(cursorImageActive>-maxCursorStack)
+            cursorImageActive  = cursorImageActive - ImageWidth;
+    } 
+    private void Prev()
+    {
+        if(cursorImageActive!=0)
+            cursorImageActive  = cursorImageActive + ImageWidth;
+    }
+
+    protected override void OnInitialized()
+    {
+        if(ListImages is not null) // F$%k code smell
+        {
+            maxCursorStack = (ListImages.Count-1)*ImageWidth;
+        }
+      
+        base.OnInitialized();
+    }
+}

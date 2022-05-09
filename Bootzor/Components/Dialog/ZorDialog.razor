@@ -1,0 +1,49 @@
+﻿
+@if(ShowDialog){
+    <div class="__bz_Dialog @(!Overlay ? "__bz_Dialog-override-overlay":"") @_dialogEffect" 
+        @ref=@zorDialog tabindex="0" @onkeydown="OnEscapeKeyPressed" >
+
+        <div class="__bz_Dialog-frame @_dialogPosition @_dialogEffect">
+            <div class="__bz_Dialog-frame__content @_dialogColor">
+
+                <div class="__bz_Dialog-frame__content-header __bz_Dialog-frame__content-header-custom-style">
+                
+                    <div class="__bz_Dialog-frame__content-header__title">
+                        @Title
+                    </div>
+
+                    <button type="button" class="__bz_Dialog-frame__content-header__button-close @_dialogColor" @onclick="@(() => ClickDialogResult(false))">&times;</button>
+                </div>
+
+                <div class="__bz_Dialog-frame__content-body">
+                    <div class="__bz_Dialog-frame__content-body-icon @_dialogIcon @(@_dialogColor.Equals("ZorColorDark") ? @_dialogColor:"")">
+                    </div>
+                    <div class="__bz_Dialog-frame__content-body-content">
+                        asdasdasd asd as das ds 
+                        @if(Content != null)
+                        {
+                            @Content
+                        }
+                    </div>
+                </div>
+
+                <div class="__bz_Dialog-frame__content-footer">
+                    @*TODO Cambiar swithc, no es dinamico*@
+                    @switch (Buttons)
+                    {
+                        case DialogButtons.Ok:
+                            <button type="button" class="__bz_Dialog-frame__content-footer__button-ok" @onclick=@(()=>ClickDialogResult(true))>OK</button>
+                            break;
+                        case DialogButtons.OkCancel:
+                            <button type="button" class="__bz_Dialog-frame__content-footer__button-cancel" @onclick="@(()=>ClickDialogResult(false))">Cancel</button>
+                            <button type="button" class="__bz_Dialog-frame__content-footer__button-ok" @onclick=@(()=>ClickDialogResult(true))>OK</button>
+                            break;
+                        case DialogButtons.Cancel:
+                            <button type="button" class="__bz_Dialog-frame__content-footer__button-cancel" @onclick="@(()=>ClickDialogResult(false))">Cancel</button>
+                            break;
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}

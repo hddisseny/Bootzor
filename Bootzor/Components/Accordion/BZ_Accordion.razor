@@ -1,0 +1,38 @@
+﻿<div class="__bz_accordion">
+    <div class="__bz_accordion-header" @onclick="@(()=> Toggle())">   
+            <span class="__bz_accordion-header__title">@AccordionTitle</span>
+            <i class='__bz_accordion-header__chevron @(Collapsed? "collapsed" : string.Empty )'>&rang;</i> 
+    </div> 
+    <div class='__bz_accordion-content @(Collapsed? "collapsed" : string.Empty )'>
+        <div class="__bz_accordion-content__text">
+            @AccordionContent
+        </div>
+    </div>
+   
+</div>
+@code
+{
+    /// <summary>
+    /// Visible title text 
+    /// </summary>
+    [Parameter]
+    public RenderFragment? AccordionTitle { get; set; }
+
+    /// <summary>
+    /// Content of accordion
+    /// </summary>
+    [Parameter]
+    public RenderFragment? AccordionContent { get; set; }
+
+    /// <summary>
+    /// Set initial state 
+    /// </summary>
+    [Parameter]
+    public bool Collapsed { get; set; } = false;
+
+    /// <summary>
+    /// Toggle accordion
+    /// </summary>
+    void Toggle()=> 
+        Collapsed = !Collapsed; 
+}

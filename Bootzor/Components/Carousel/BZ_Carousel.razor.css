@@ -1,0 +1,16 @@
+﻿.slider{}
+    .slider .visor {
+        border: 1px solid black;
+        width:600px; 
+        height:300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .slider .visor .slide { 
+            position:absolute;
+            top: 0;
+            transition: all .666s ease-in;
+        }
+
+       

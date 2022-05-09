@@ -1,0 +1,328 @@
+﻿.__bz_Dialog {
+    position: fixed;
+    background-color: rgb(0, 0, 0, .75);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    animation-name: in-transition-dialog-opacity;
+    animation-duration: 0.333s;
+    top: 0;
+    left: 0;
+}
+
+@keyframes in-transition-dialog-opacity {
+        0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.__bz_Dialog-override-overlay {
+    background-color: transparent !important;
+}
+
+.__bz_Dialog .ZorPositionTop{
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .__bz_Dialog .ZorPositionTop.ZorEffectTransition {
+        animation-name: in-transition-dialog-top;
+        animation-duration: 0.333s;
+    }
+
+    @keyframes in-transition-dialog-top {
+        0% {
+            top: -100%;
+        }
+
+        100% {
+            top: 2.5%;
+        }
+    }
+
+.__bz_Dialog.ZorEffectTransition {
+    animation-name: in-transition-dialog-shadow;
+    animation-duration: 0.333s;
+}
+
+@keyframes in-transition-dialog-shadow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+    .__bz_Dialog .ZorPositionBottom {
+        bottom: 2.5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+        .__bz_Dialog .ZorPositionBottom.ZorEffectTransition {
+            animation-name: in-transition-dialog-bottom;
+            animation-duration: 0.333s;
+        }
+
+@keyframes in-transition-dialog-bottom {
+    0% { bottom: -100%; }
+    100% {
+        bottom: 2.5%;
+    }
+}
+
+.__bz_Dialog .ZorPositionTopLeft {
+    top: 25px;
+    left: 2.5%;
+    transform: translateX(0%);
+}
+    .__bz_Dialog .ZorPositionTopLeft.ZorEffectTransition {
+        animation-name: in-transition-dialog-topleft;
+        animation-duration: 0.333s;
+    }
+
+@keyframes in-transition-dialog-topleft {
+    0% {
+        top: -100%;
+        left: -100%;
+    }
+    100% {
+        left: 2.5%;
+        top: 25px;
+    }
+}
+
+.__bz_Dialog .ZorPositionTopRight {
+    top: 25px;
+    right: 2.5%;
+    transform: translateX(0%);
+
+}
+    .__bz_Dialog .ZorPositionTopRight.ZorEffectTransition {
+        animation-name: in-transition-dialog-topright;
+        animation-duration: 0.333s;
+    }
+
+@keyframes in-transition-dialog-topright {
+    0% {
+        top:-100%;
+        right: -100%;
+    }
+
+    100% {
+        right: 2.5%;
+        top:25px;
+    }
+}
+
+.__bz_Dialog .ZorPositionBottomRight {
+    bottom: 2.5%;
+    right: 2.5%;
+    transform: translateX(0%);
+}
+    .__bz_Dialog .ZorPositionBottomRight.ZorEffectTransition {
+        animation-name: in-transition-dialog-bottomright;
+        animation-duration: 0.333s;
+    }
+
+@keyframes in-transition-dialog-bottomright {
+    0% {
+        bottom: -100%;
+        right: -100%;
+    }
+
+    100% {
+        right: 2.5%;
+        bottom: 2.5%;
+    }
+}
+.__bz_Dialog .ZorPositionBottomLeft {
+    bottom: 2.5%;
+    left: 2.5%;
+    transform: translateX(0%);
+}
+    .__bz_Dialog .ZorPositionBottomLeft.ZorEffectTransition {
+        animation-name: in-transition-dialog-bottomleft;
+        animation-duration: 0.333s;
+    }
+@keyframes in-transition-dialog-bottomleft {
+    0% {
+        bottom: -100%;
+        left: -100%;
+    }
+
+    100% {
+        left: 2.5%;
+        bottom: 2.5%;
+    }
+}
+
+/*Sobrescritura defs los efectos*/
+.__bz_Dialog.ZorEffectNone {
+    animation-name: none !important;
+    animation-duration: 0s;
+}
+
+.__bz_Dialog .ZorEffectNone {
+    animation-name: none !important;
+    animation-duration: 0s;
+}
+
+.__bz_Dialog .ZorEffectNoneTransition {
+}
+/*Fin de sobrescritura defs efectos*/
+
+.__bz_Dialog .ZorPositionCenter {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateX(-50%);
+    animation-name: in-transition-dialog-center;
+    animation-duration: 0.333s;
+}
+
+@keyframes in-transition-dialog-center {
+    0% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+.__bz_Dialog .__bz_Dialog-frame {
+    max-width: 355px;
+    width: 95%;
+    height: auto;
+    position: absolute;
+    border-radius: 6px;
+}
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorSmoothWhite,
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorWhite,
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorDark,
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorBlue,
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorOrange {
+        border-radius: 6px;
+    }
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorDark {
+        color:whitesmoke;
+        border: 1px solid #626262f2;
+    }
+
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content {
+    }
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header {
+        padding: 0px 0px 5px 35px;
+    }
+
+
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__title {
+            padding: 25px 35px 0px 0px;
+            font-size: 18px;
+            font-weight:400;
+        }
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__button-close {
+            position: absolute;
+            top: 0px;
+            right: 8px;
+            border: none;
+            font-size: 24px;
+            font-weight: 500;
+            background-color: transparent;
+            transition: all .333s ease;
+        }
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__button-close.ZorColorDark {
+            filter:invert(0.85);
+        }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__button-close:hover {
+                color: darkred;
+            }
+
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__button-close:focus {
+                color: darkred;
+                outline: none;
+            }
+
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body {
+            padding: 0px 35px;
+            min-height: 65px;
+            display: flex;
+        }
+
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-content {
+                font-size: 1rem;
+                width: auto;
+                margin:auto;
+            }
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon {
+            width: 65px;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorColorDark {
+                background-color:transparent;
+            }
+                .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconNone {
+                width: auto;
+                height: auto;
+                margin-right: 0px;
+            }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconInformation {
+                background-image: url("assets/master/icons/info.png");
+            }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconWarning {
+                background-image: url("assets/master/icons/warning.svg.png");
+            }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconQuestion {
+                background-image: url("assets/master/icons/question.webp");
+            }
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer {
+        padding: 15px 35px 15px 35px;
+        text-align: right;
+    }
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer button {
+            border: none;
+            padding: 5px 10px;
+            font-size: .8rem;
+            text-transform: uppercase;
+            color: white;
+            transition: all .333s ease;
+            border-radius: 3px;
+            margin: 1% 0;
+        }
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer .__bz_Dialog-frame__content-footer__button-ok {
+            background-color: #5b9732;
+            min-width: 120px;
+        }
+
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer .__bz_Dialog-frame__content-footer__button-ok:hover {
+                background-color: darkgreen;
+            }
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer .__bz_Dialog-frame__content-footer__button-cancel,
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer .__bz_Dialog-frame__content-footer__button-delete {
+            background-color: #c13131;
+            min-width: 70px;
+        }
+
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer .__bz_Dialog-frame__content-footer__button-cancel:hover,
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer .__bz_Dialog-frame__content-footer__button-delete:hover {
+                background-color: darkred;
+            }
+

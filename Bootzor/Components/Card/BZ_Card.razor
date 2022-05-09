@@ -1,0 +1,37 @@
+﻿ <div class='__bz_card @( ( Row == true) ? "__bz_card-row" : string.Empty )' style="width: @Width;">
+    @if(Header is not null)
+    {
+        <div class="__bz_card-header">@Header</div>
+    }
+    @if(!ImageSource.Equals(string.Empty))
+    {
+        <div class="__bz_card-image" style="background-image: url(@ImageSource)"></div>
+    }    
+     <div class="__bz_card-body">
+         <div class="__bz_card-content_title">
+             @ContentTitle
+         </div>
+         <div class="__bz_card-body_content">
+             @Content
+         </div>
+     </div>
+ </div>
+@code {
+    [Parameter]
+    public String ImageSource { get; set; } = string.Empty;
+
+    [Parameter]
+    public bool Row { get; set; } = false;
+
+    [Parameter]
+    public String Width { get; set; } = string.Empty;
+
+    [Parameter]
+    public RenderFragment? Header { get; set; }
+
+    [Parameter, EditorRequired]
+    public RenderFragment? ContentTitle { get; set; }
+
+    [Parameter, EditorRequired]
+    public RenderFragment? Content { get; set; }
+}
