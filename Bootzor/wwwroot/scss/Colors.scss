@@ -1,0 +1,46 @@
+﻿/** Bootzor SCSS Colors */
+* {
+    --main-white: #ffffff;
+    --bz-color-default-bg: #f4f4f4;
+    --bz-color-default-border: #e6e6e6;
+    --bz-color-default-text: #605f5f;
+    --bz-color-primary-bg: #89b1cd;
+    --bz-color-primary-border: #67a5d7;
+    --bz-color-primary-text: #41627c;
+    --bz-color-success-bg: #86d292;
+    --bz-color-success-border: #70b194;
+    --bz-color-success-text: #41725c;
+    --bz-color-fail-bg: #d07171;
+    --bz-color-fail-border: #bd4a4a;
+    --bz-color-fail-text: #653232;
+    --bz-color-warning-bg: #f5bd6d;
+    --bz-color-warning-border: #ce9e42;
+    --bz-color-warning-text: #8b682c;
+    --bz-color-info-bg: #bffbec;
+    --bz-color-info-border: #4dd6d3;
+    --bz-color-info-text: #4b8d9c;
+    --bz-color-vertical-bars: #ececec;
+}
+
+/*Background colors*/
+.ZorColorSmoothWhite {
+    background-color: #eaeaea;
+}
+
+.ZorColorWhite {
+    background-color: #ffffff;
+}
+
+.ZorColorDark {
+    background-color: #1F1B24;
+}
+
+.ZorColorBlue {
+    background-color: #D5F3FE;
+}
+
+.ZorColorOrange {
+    background-color: #FFE9C9;
+}
+
+/*End colors definition*/

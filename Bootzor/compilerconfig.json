@@ -2,5 +2,9 @@
   {
     "outputFile": "Components/Alert/BZ_Alert.razor.css",
     "inputFile": "Components/Alert/BZ_Alert.razor.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/Bootzor.css",
+    "inputFile": "wwwroot/scss/Bootzor.scss"
   }
 ]
