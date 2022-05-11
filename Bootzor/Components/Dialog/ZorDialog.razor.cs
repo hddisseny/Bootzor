@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
-using BootzorComponents.ZorEnums;
+using Bootzor.ZorEnums;
 using Microsoft.AspNetCore.Components.Web;
 
 namespace Bootzor.Components.Dialog;

@@ -1,4 +1,4 @@
-﻿namespace BootzorComponents.ZorEnums;
+﻿namespace Bootzor.ZorEnums;
 
 public enum Color
 {
