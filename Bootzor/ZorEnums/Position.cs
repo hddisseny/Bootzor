@@ -1,4 +1,4 @@
-﻿namespace BootzorComponents.ZorEnums;
+﻿namespace Bootzor.ZorEnums;
 
 /// <summary>
 /// Enum to indicate the position.
