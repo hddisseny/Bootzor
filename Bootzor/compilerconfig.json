@@ -6,5 +6,9 @@
   {
     "outputFile": "wwwroot/css/Bootzor.css",
     "inputFile": "wwwroot/scss/Bootzor.scss"
+  },
+  {
+    "outputFile": "Components/Button/ZorButton.razor.css",
+    "inputFile": "Components/Button/ZorButton.razor.scss"
   }
 ]

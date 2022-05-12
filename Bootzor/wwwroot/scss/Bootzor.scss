@@ -1,5 +1,10 @@
 ﻿/** Bootzor SCSS Bootzor */
 
+// Set up main font
+* {
+    font-family: "Montserrat",sans-serif;
+}
+ 
 @import "Colors.scss";
 @import "Icons.scss";
 
@@ -7,4 +12,4 @@
 a {
     text-decoration: none;
     color: inherit;
-} 
+}

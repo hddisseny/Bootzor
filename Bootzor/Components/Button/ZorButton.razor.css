@@ -1,0 +1,18 @@
+﻿.__bz_button {
+  border: 0;
+  padding: 5px 10px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid var(--bz-color-default-border);
+  background-color: var(--bz-color-default-bg);
+  color: var(--bz-color-default-text);
+  margin: 1%;
+  max-width: 768px;
+  cursor: pointer;
+  transition: background-color 0.333s ease-in-out;
+  color: var(--bz-color-default-text);
+}
+.__bz_button:hover {
+  background-color: var(--bz-color-default-bg-hover);
+}
