@@ -10,7 +10,9 @@ public partial class ZorButton : ComponentBase
     [Parameter, EditorRequired]
     public EventCallback ClickButton { get; set; }
 
-    [Parameter, EditorRequired]
-    public RenderFragment? Content { get; set; }
+    [Parameter]
+    public string TextButton { get; set; } = string.Empty;
 
+    [Parameter]
+    public RenderFragment? Content { get; set; }
 }
